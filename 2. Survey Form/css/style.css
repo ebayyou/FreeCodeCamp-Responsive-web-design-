@@ -1,0 +1,136 @@
+/* * =============== GOOGLE FONTS api's =============== */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* ? =============== VARIABLES CSS ===============*/
+:root {
+  /* * ========== Colors ==========*/
+  --color-white: #f3f3f3;
+  --color-darkblue: #1b1b32;
+  --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+  --color-green: #37af65;
+
+  /* * ========== Font ==========*/
+  --body-font: 'Lato', sans-serif;
+}
+
+/* ? =============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(90deg, rgba(13, 57, 70, 0.508), rgba(47, 63, 117, 0.748));
+  background-size: cover;
+  color: var(--color-white);
+  font-family: var(--body-font);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ? =============== REUSABLE CSS CLASSES ===============*/
+.grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.header {
+  text-align: center;
+  color: var(--color-white);
+}
+
+/* ? =============== COMMPONENTS ===============*/
+
+#survey-form {
+  overflow: hidden;
+  width: 750px;
+  background-color: var(--color-darkblue-alpha);
+  color: var(--color-white);
+  margin: 30px auto 0;
+  padding: 20px 40px;
+  border-radius: 0.8rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.248);
+}
+
+.btn-submit {
+  border-radius: 0.5rem;
+  width: 50%;
+  height: 40px;
+  display: block;
+  margin: 30px auto 0;
+  background: linear-gradient(90deg, rgba(13, 57, 70, 0.864), rgba(47, 63, 117, 0.748));
+  transition: 0.3s;
+}
+
+.footer {
+  margin: 40px 0 0;
+  text-align: center;
+  color: var(--color-white);
+}
+
+.footer-link {
+  color: rgb(120, 166, 226);
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.footer-link:hover {
+  color: rgb(105, 89, 177);
+}
+
+.text-1 {
+  font-weight: normal;
+  color: rgb(255, 217, 0);
+  transition: 0.3s;
+}
+.text-1:hover {
+  color: lightblue;
+}
+
+.text-2 {
+  color: rgb(174, 134, 238);
+}
+.text-3 {
+  color: lightblue;
+}
+
+/* ? =============== RESPONSIVE BREAKPOINT ===============*/
+@media (max-width: 992px) {
+  #survey-form {
+    width: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+  #survey-form {
+    width: 500px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding-right: var(0, 0);
+    padding-left: var(0, 0);
+  }
+
+  #survey-form {
+    width: 100%;
+    margin: 30px 0 0;
+  }
+}
