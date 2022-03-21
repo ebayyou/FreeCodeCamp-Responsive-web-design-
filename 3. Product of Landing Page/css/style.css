@@ -1,0 +1,230 @@
+/* * =============== GOOGLE FONTS api's =============== */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* ? =============== VARIABLES CSS ===============*/
+:root {
+  /* * ========== Colors ==========*/
+  --color-white: #f3f3f3;
+  --color-darkblue: #1b1b32;
+  --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+  --color-green: #37af65;
+
+  /* * ========== Font ==========*/
+  --body-font: 'Lato', sans-serif;
+}
+
+/* ? =============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(90deg, #9796f0, #fbc7d4);
+  background-size: cover;
+  color: var(--color-white);
+  font-family: var(--body-font);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ? =============== REUSABLE CSS CLASSES ===============*/
+.grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.header {
+  text-align: center;
+  color: var(--color-white);
+}
+
+.btn-color {
+  background: linear-gradient(90deg, #4776e6, #8e54e9);
+  color: var(--color-white);
+}
+
+.btn-s {
+  padding: 10px 15px;
+  border-radius: 0.3rem;
+  text-decoration: none;
+  color: var(--color-white);
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+/* ? =============== COMMPONENTS ===============*/
+.title {
+  color: var(--color-white);
+  font-weight: 600;
+}
+.title-1 {
+  color: #4776e6;
+}
+.title-2 {
+  color: #8e54e9;
+}
+
+.navbar-nav {
+  column-gap: 2rem;
+}
+
+#header-img {
+  background-color: var(--color-white);
+  border-radius: 0.22rem;
+}
+
+#main {
+  margin-top: 80px;
+}
+
+#section-intro {
+  text-align: center;
+  width: 100%;
+  margin: 10px auto 50px;
+  margin-top: 50px;
+}
+
+#form {
+  width: 45%;
+  margin: 30px auto;
+}
+
+#section-features {
+  margin: 100px 0 70px;
+  color: var(--color-white);
+}
+
+.row-features {
+  column-gap: 2rem;
+}
+
+.box-features {
+  background-color: var(--color-darkblue-alpha);
+  padding: 10px;
+  border-radius: 0.8rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.618);
+}
+
+.icon-features {
+  font-size: 1.5rem;
+}
+
+.desc-features {
+  font-size: 1rem;
+  color: rgba(160, 159, 159, 0.809);
+}
+
+#video {
+  width: 100%;
+  height: 276px;
+}
+
+#section-price {
+  margin: 80px auto 50px;
+  padding: 0 20px;
+}
+
+.card-price {
+  border-top-right-radius: 0.7rem;
+  border-bottom-left-radius: 0.7rem;
+  border: 2px solid black;
+  color: var(--color-white);
+  padding-bottom: 10px;
+}
+
+.card-head {
+  padding: 0.5rem 1rem;
+  border-top-right-radius: 0.6rem;
+  margin-bottom: 0;
+  background-color: #1b1b32;
+}
+
+.card-text {
+  margin: 20px 0 30px;
+}
+
+.icon-card {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  background: linear-gradient(90deg, #9796f0, #fbc7d4);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+#footer {
+  background-color: rgb(33, 33, 33);
+  color: var(--color-white);
+  text-align: center;
+  padding: 20px 10px 10px;
+}
+
+.footer-link {
+  color: rgb(120, 166, 226);
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.footer-link:hover {
+  color: rgb(105, 89, 177);
+}
+
+.text-1 {
+  font-weight: normal;
+  color: rgb(255, 217, 0);
+  transition: 0.3s;
+}
+.text-1:hover {
+  color: lightblue;
+}
+
+.text-2 {
+  color: rgb(174, 134, 238);
+}
+.text-3 {
+  color: lightblue;
+}
+
+/* ? =============== Responsive Breakpoint ===============*/
+@media (max-width: 576px) {
+  .box-features {
+    margin-bottom: 20px;
+  }
+
+  #form {
+    width: 80%;
+  }
+
+  #section-price {
+    padding: 0 20px;
+  }
+
+  .card-price {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .section-video {
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  #video {
+    width: 90%;
+    height: 476px;
+  }
+}

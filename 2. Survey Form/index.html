@@ -5,24 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- ? =============== FAVICON =============== -->
-    <link rel="shortcut icon" href="img/book-content-solid-24.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/folder-minus-solid-24.png" type="image/x-icon" />
 
     <!-- ? =============== MY-CSS =============== -->
     <link rel="stylesheet" href="css/style.css" />
 
     <!-- ? =============== USING bootstrap-v5.1 =============== -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-    <title>Ebayyou : Surver Form</title>
+    <title>Ebayyou : Survey Form</title>
   </head>
   <body>
-    <!-- here --
-    <!-- Todo =============== MAIN ===============-->
+    <!-- here -->
     <div class="container-md my-5">
+      <!-- Todo =============== Header =============== -->
       <header class="header">
         <h1 id="title">Ebayyou Survey Form</h1>
         <p id="description">Thank you for taking the time to help us improve the platform</p>
       </header>
 
+      <!-- Todo =============== Survey-Form =============== -->
       <form id="survey-form">
         <div class="mb-3">
           <label for="name" class="form-label" id="name-label">Name</label>
@@ -31,7 +32,7 @@
 
         <div class="mb-3">
           <label for="email" class="form-label" id="email-label">Email</label>
-          <input type="email" class="form-control" id="email" placeholder="enter your email" />
+          <input type="email" class="form-control" id="email" placeholder="enter your email" required />
           <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
         </div>
 
@@ -54,16 +55,16 @@
         <div class="form-group my-3">
           <label class="form-label">Would you recommend freeCodeCamp to a friend?</label>
           <div class="form-check">
-            <input class="form-check-input" type="radio" id="definitely" />
-            <label class="form-check-label" for="definitely" name="recommended"> Definitely </label>
+            <input class="form-check-input" type="radio" id="definitely" name="recommended" value="definitely" />
+            <label class="form-check-label" for="definitely"> Definitely </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" id="maybe" />
-            <label class="form-check-label" for="maybe" name="recommended"> Maybe </label>
+            <input class="form-check-input" type="radio" id="maybe" name="recommended" value="maybe" />
+            <label class="form-check-label" for="maybe"> Maybe </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" id="notsure" />
-            <label class="form-check-label" for="notsure" name="recommended">Not Sure</label>
+            <input class="form-check-input" type="radio" id="notsure" name="recommended" value="notsure" />
+            <label class="form-check-label" for="notsure">Not Sure</label>
           </div>
         </div>
 
@@ -81,60 +82,60 @@
         <div class="form-group my-3">
           <label class="form-label">What whould you like to see improved? <span>(check all that apply)</span></label>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="front-end" />
+            <input class="form-check-input" type="checkbox" id="front-end" value="front-end" />
             <label class="form-check-label" for="front-end"> Front-end Projects </label>
           </div>
 
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="back-end" />
+            <input class="form-check-input" type="checkbox" id="back-end" value="back-end" />
             <label class="form-check-label" for="back-end"> Back-end Projects</label>
           </div>
 
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="Data" />
+            <input class="form-check-input" type="checkbox" id="Data" value="data-visualization" />
             <label class="form-check-label" for="Data">Data Visualization</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="chall" />
+            <input class="form-check-input" type="checkbox" id="chall" value="challanges" />
             <label class="form-check-label" for="chall">Challanges</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="open" />
+            <input class="form-check-input" type="checkbox" id="open" value="open-source" />
             <label class="form-check-label" for="open">Open Source Community</label>
           </div>
 
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="Gitter" />
+            <input class="form-check-input" type="checkbox" id="Gitter" value="gitter" />
             <label class="form-check-label" for="Gitter">Gitter help rooms</label>
           </div>
 
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="videos" />
+            <input class="form-check-input" type="checkbox" id="videos" value="videos" />
             <label class="form-check-label" for="videos">Videos</label>
           </div>
 
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="city" />
+            <input class="form-check-input" type="checkbox" id="city" value="city" />
             <label class="form-check-label" for="city">City Meetups</label>
           </div>
 
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="notsure" />
+            <input class="form-check-input" type="checkbox" id="notsure" value="note-sure" />
             <label class="form-check-label" for="notsure">Not Sure</label>
           </div>
 
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="wiki" />
+            <input class="form-check-input" type="checkbox" id="wiki" value="wiki" />
             <label class="form-check-label" for="wiki">Wiki</label>
           </div>
 
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="forum" />
+            <input class="form-check-input" type="checkbox" id="forum" value="forum" />
             <label class="form-check-label" for="forum">Forum</label>
           </div>
 
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="courses" />
+            <input class="form-check-input" type="checkbox" id="courses" value="additional-courses" />
             <label class="form-check-label" for="cuorses">Additional Courses</label>
           </div>
         </div>
@@ -147,6 +148,7 @@
         <button type="submit" class="btn-submit btn-danger" id="submit">Submit</button>
       </form>
 
+      <!-- Todo =============== Footer =============== -->
       <footer class="footer">
         <p class="text-footer">
           &copy; Copyright 2022 - Design by <a href="https://github.com/ebayyou" class="footer-link" target="_blank">Ebayyou</a> {<a
@@ -160,7 +162,6 @@
         </p>
       </footer>
     </div>
-    <!-- *>>>>>>>> Last-MAIN <<<<<<<< -->
 
     <!-- out -->
 
@@ -169,4 +170,4 @@
   </body>
 </html>
 
-<!-- Todo - - -->
+<!-- Todo FreeCodeCamp : Responsive web design - Make a Survey form -->
