@@ -5,9 +5,11 @@
 :root {
   /* * ========== Colors ==========*/
   --color-white: #f3f3f3;
+  --color-black: #000;
   --color-darkblue: #1b1b32;
   --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
-  --color-green: #37af65;
+  --back-gradient-1: linear-gradient(90deg, #9796f0, #fbc7d4);
+  --back-gradient-2: linear-gradient(90deg, #4776e6, #8e54e9);
 
   /* * ========== Font ==========*/
   --body-font: 'Lato', sans-serif;
@@ -25,7 +27,7 @@ html {
 }
 
 body {
-  background: linear-gradient(90deg, #9796f0, #fbc7d4);
+  background: var(--back-gradient-1);
   background-size: cover;
   color: var(--color-white);
   font-family: var(--body-font);
@@ -53,7 +55,7 @@ img {
 }
 
 .btn-color {
-  background: linear-gradient(90deg, #4776e6, #8e54e9);
+  background: var(--back-gradient-2);
   color: var(--color-white);
 }
 
@@ -141,7 +143,7 @@ img {
 .card-price {
   border-top-right-radius: 0.7rem;
   border-bottom-left-radius: 0.7rem;
-  border: 2px solid black;
+  border: 2px solid var(--color-black);
   color: var(--color-white);
   padding-bottom: 10px;
 }
@@ -150,7 +152,7 @@ img {
   padding: 0.5rem 1rem;
   border-top-right-radius: 0.6rem;
   margin-bottom: 0;
-  background-color: #1b1b32;
+  background-color: var(--color-darkblue);
 }
 
 .card-text {
@@ -160,7 +162,7 @@ img {
 .icon-card {
   font-size: 1.5rem;
   margin-right: 10px;
-  background: linear-gradient(90deg, #9796f0, #fbc7d4);
+  background: var(--back-gradient-1);
   color: transparent;
   -webkit-background-clip: text;
 }

@@ -1,0 +1,321 @@
+/* * =============== FONTS api's =============== */
+/* font-family: 'Segoe UI Regular';
+font-family: 'Segoe UI Italic';
+font-family: 'Segoe UI Bold';
+font-family: 'Segoe UI Bold Italic'; */
+
+/* ? =============== VARIABLES CSS ===============*/
+:root {
+  /* * ========== Colors ==========*/
+  --color-white: #f3f3f3;
+  --color-background: #363449;
+  --color-title: rgb(65, 183, 238);
+  --color-subtitle: rgb(65, 85, 238);
+  --color-grey: rgb(146, 146, 146);
+
+  /* * ========== Font ==========*/
+  --body-font: 'Segoe UI Regular';
+}
+
+/* ? =============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: linear-gradient(75deg, #363449, #1c262c);
+  color: var(--color-white);
+  font-family: var(--body-font);
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ? =============== REUSABLE CSS CLASSES ===============*/
+
+.header {
+  text-align: center;
+  color: var(--color-white);
+}
+
+.main-section {
+  padding: 10px 20px 10px 10px;
+  border-bottom: 2px solid hsl(219, 8%, 20%);
+}
+
+.section-groups {
+  margin-bottom: 50px;
+}
+
+.title-section {
+  color: var(--color-title);
+  margin-bottom: 30px;
+}
+
+.sub-section {
+  color: var(--color-subtitle);
+}
+
+.paragraph-section {
+  color: #e4e4e4d0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+}
+
+.titles-section {
+  color: #6b64a5;
+}
+
+.subtitle-section {
+  font-size: 1.2rem;
+  color: #9a2de8;
+}
+.text-purple {
+  color: #9a2de8;
+}
+.text-grey {
+  color: var(--color-grey);
+}
+
+.code-group {
+  background-color: var(--color-background);
+  padding: 20px;
+  border-radius: 15px;
+  width: 80%;
+}
+
+.code-in {
+  display: block;
+}
+
+.not {
+  color: rgb(192, 192, 192);
+}
+
+/* ? ===============  COMPONENTS ===============*/
+
+#main-doc {
+  position: relative;
+}
+
+.row-doc {
+  column-gap: 4rem;
+}
+
+#navbar {
+  width: 305px;
+  height: 100%;
+  position: fixed;
+  border-right: 2px solid var(--color-background);
+  padding-bottom: 100px;
+}
+
+#header {
+  background-color: var(--color-background);
+  color: var(--color-white);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 0.5rem;
+}
+
+.title-header {
+  font-size: 1.7rem;
+  margin-bottom: 0;
+}
+.sub-header {
+  font-size: 0.9rem;
+  color: var(--color-grey);
+}
+
+#navbar .group-list {
+  height: 88%;
+  padding: 40px 10px 10px 30px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  column-gap: 0.4rem;
+}
+
+.icon-list {
+  font-size: 1.5rem;
+  background-color: var(--color-white);
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.357);
+  padding: 4px;
+  color: var(--color-title);
+  margin: 10px 0;
+}
+
+.list-ui {
+  font-size: 1rem;
+  padding: 4px 9px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  margin: 10px 0;
+  color: #fff;
+}
+.nav-link:hover {
+  color: var(--color-title);
+}
+
+.nav-links {
+  text-decoration: none;
+  color: rgba(160, 159, 159, 0.802);
+  font-weight: 400;
+  transition: 0.3s;
+  margin: 0 0 10px;
+}
+
+.icon-lists {
+  color: #6b64a5;
+  font-size: 1rem;
+  margin: 0 0 10px 45px;
+}
+
+.img-tailwind {
+  border-radius: 1rem;
+  margin: 0 auto;
+  display: block;
+}
+
+.link-react {
+  color: var(--color-background);
+  background-color: rgba(25, 255, 255, 0.248);
+}
+.link-react:hover {
+  color: var(--color-white);
+}
+
+#footer {
+  margin: 15px 0 30px;
+  padding: 0 20px;
+  justify-content: space-between;
+  display: flex;
+  color: var(--color-grey);
+}
+
+#footer .copyr {
+  column-gap: 0.6rem;
+  display: block;
+}
+
+.link-footer {
+  font-size: 1.5rem;
+  color: var(--color-grey);
+}
+.link-footer:hover {
+  color: var(--color-white);
+}
+
+/* ? ========== Scrool Bar ========== */
+::-webkit-scrollbar {
+  width: 0.6rem;
+  border-radius: 0.5rem;
+  background-color: hsl(219, 8%, 36%);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsl(219, 8%, 26%);
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(219, 8%, 20%);
+}
+
+/* ? ===============  RESPONSIVE BREAKPOINT ===============*/
+@media (min-width: 1200px) {
+  #navbar {
+    width: 445px;
+  }
+
+  .row-doc {
+    column-gap: 7rem;
+  }
+
+  .main-section {
+    padding: 10px 80px 10px 10px;
+  }
+}
+
+@media (max-width: 992px) {
+  #navbar {
+    top: 0;
+  }
+}
+
+@media (max-width: 815px) {
+  #navbar {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    margin: 20px auto 0;
+    width: 90%;
+    max-height: 375px;
+    z-index: 1;
+    border-left: 2px solid var(--color-background);
+  }
+
+  .main-section {
+    padding: 0px 30px;
+  }
+
+  .nav-group {
+    background-color: #6b64a5;
+  }
+
+  .section-groups {
+    margin-top: 400px;
+  }
+}
+
+@media (max-width: 567px) {
+  .code-group {
+    margin: 0 auto 15px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 90%;
+    max-height: 300px;
+  }
+
+  #footer {
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  .copyr {
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 385px) {
+  .section-groups {
+    margin-top: 450px;
+  }
+}
