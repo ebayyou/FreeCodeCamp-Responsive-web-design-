@@ -1,0 +1,53 @@
+/* * =============== GOOGLE FONTS api's =============== */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* ? =============== VARIABLES CSS ===============*/
+:root {
+  /* * ========== Colors ==========*/
+  --color-white: #f3f3f3;
+  --color-darkblue: #1b1b32;
+  --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+  --color-green: #37af65;
+
+  /* * ========== Font ==========*/
+  --body-font: 'Lato', sans-serif;
+}
+
+/* ? =============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(90deg, rgba(13, 57, 70, 0.508), rgba(47, 63, 117, 0.748));
+  background-size: cover;
+  color: var(--color-white);
+  font-family: var(--body-font);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ? =============== REUSABLE CSS CLASSES ===============*/
+.grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+/* ? =============== COMMPONENTS ===============*/

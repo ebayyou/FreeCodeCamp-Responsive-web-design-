@@ -4,10 +4,12 @@
 /* ? =============== VARIABLES CSS ===============*/
 :root {
   /* * ========== Colors ==========*/
-  --title-color: #333;
+  --title-color: #fff;
+  --subtitle-color: #333;
   --text-color: black;
-  --body-color: #eee;
-  --container-color: #fff;
+  --main-color: #f68989;
+  --body-color: #874356;
+  --container-color: #f6e7d8;
 }
 
 /* ? =============== BASE ===============*/
@@ -22,7 +24,6 @@ html {
 }
 
 body {
-  background-color: var(--body-color);
   color: var(--text-color);
 }
 
@@ -45,10 +46,16 @@ img {
   gap: 1.25rem;
 }
 
+.body {
+  background-color: var(--body-color);
+}
+
 #main {
   overflow: hidden;
-  background-color: var(--body-color);
-  margin: 30px 10px;
+  background-color: var(--main-color);
+  margin: 30px 10px 0;
+  border-top-left-radius: 1.2rem;
+  border-top-right-radius: 1.2rem;
 }
 
 /* ? =============== MAIN ===============*/
@@ -77,17 +84,18 @@ img {
   display: block;
   margin: 0 auto;
   height: auto;
+  border-radius: 0 0 0.6rem 0.6rem;
 }
 
 #img-caption {
   margin-top: 15px;
   padding: 0 15px;
-  color: var(--title-color);
+  color: var(--subtitle-color);
 }
 
 #info-title {
   text-align: center;
-  color: var(--title-color);
+  color: var(--subtitle-color);
   font-size: 1.4rem;
   font-weight: bold;
   margin: 60px 0;
@@ -109,7 +117,7 @@ img {
 }
 
 .list-item {
-  color: var(--title-color);
+  color: var(--subtitle-color);
   display: block;
   margin-bottom: 20px;
 }
@@ -120,7 +128,7 @@ img {
 
 .blockquote {
   font-style: italic;
-  color: var(--title-color);
+  color: var(--subtitle-color);
 }
 
 .blockquote p {
@@ -131,6 +139,10 @@ img {
   font-size: 1.2rem;
   text-align: center;
   margin-bottom: 40px;
+}
+
+#tribute-link {
+  color: var(--body-color);
 }
 
 @media (max-width: 567px) {
