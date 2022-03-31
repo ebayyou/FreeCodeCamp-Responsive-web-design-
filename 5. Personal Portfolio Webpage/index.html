@@ -7,15 +7,178 @@
     <!-- ? =============== FAVICON =============== -->
     <link rel="shortcut icon" href="img/shekel-regular-24.png" type="image/x-icon" />
 
+    <!-- ? =============== BOX_ICON =============== -->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+
     <!-- ? =============== MY-CSS =============== -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media-query.css" />
 
     <!-- ? =============== USING bootstrap-v5.1 =============== -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
     <title>Ebayyou : Portfolio webpage</title>
   </head>
   <body>
     <!-- here -->
+
+    <!-- ? header -->
+    <header id="header">
+      <!-- ? navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+        <div class="container">
+          <a class="navbar-brand profile-link" href="https://github.com/ebayyou" target="_blank">
+            <img src="img/coding.png" alt="coding-logo" class="logo-brand" />
+            <p class="text-brand">DEvWWW</p>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" href="#main">Home</a>
+              <a class="nav-link mid-link" href="#projects">Cool stuff</a>
+              <a class="nav-link" href="https://api.whatsapp.com/send?phone=0895383121719&text=Hello, more information!" target="_blank">Lets chat?</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ? main -->
+    <main id="main">
+      <div class="container">
+        <div class="row justify-content-center row-main align-items-center">
+          <div class="col-md-6">
+            <img src="img/undraw_dev_productivity_re_fylf.svg" alt="main-img" class="main-img" />
+          </div>
+
+          <div class="col-md-6">
+            <section id="welcome-section">
+              <h1 class="title">Welcome to <br />DevWWW.</h1>
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+                Esse quo impedit voluptatesquis deserunt <br />
+                consectetur tempore fugiat, nam quos.
+              </p>
+              <a href="https://api.whatsapp.com/send?phone=0895383121719&text=Hello, more information!" class="btn btn-outline-light fs-5" target="_blank">Lets Chat?</a>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ? section_portfolio -->
+    <section class="section project-tile" id="projects">
+      <div class="container">
+        <h1 class="title text-center">{Portfolio}</h1>
+        <p class="paragraph text-center">
+          Checkout your portfolio to see some of our recent <br />
+          work. You can see more awesome stuff on <i class="bx bxl-codepen text-danger fs-5"></i> Codepen.io
+        </p>
+
+        <div class="row row-column-gap">
+          <div class="col-md-4">
+            <div class="card bg-tribute text-white rounded-3">
+              <img src="img/1.png" class="card-img" alt="..." />
+              <div class="card-img-overlay">
+                <h3 class="title-port">Tribute Page</h3>
+                <p class="desc-port">Last updated 3 mins ago</p>
+                <a href="https://codepen.io/ebayyou/pen/LYeWKMV" class="btn btn-dark fw-600" target="_blank">Show More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card bg-survey text-white rounded-3">
+              <img src="img/2.png" class="card-img" alt="..." />
+              <div class="card-img-overlay">
+                <h3 class="title-port">Survey Form</h3>
+                <p class="desc-port">Last updated 12 mins ago</p>
+                <a href="https://codepen.io/ebayyou/pen/jOYwyOM" class="btn btn-dark fw-600" target="_blank">Show More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card bg-product text-white rounded-3">
+              <img src="img/4.png" class="card-img" alt="..." />
+              <div class="card-img-overlay">
+                <h3 class="title-port">Product of page</h3>
+                <p class="desc-port">Last updated 22 mins ago</p>
+                <a href="https://codepen.io/ebayyou/pen/NWXgdxN" target="_blank" class="btn btn-dark fw-600">Show More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card bg-doct text-white rounded-3">
+              <img src="img/3.png" class="card-img" alt="..." />
+              <div class="card-img-overlay">
+                <h3 class="title-port">Document page</h3>
+                <p class="desc-port">Last updated 3 mins ago</p>
+                <a href="https://codepen.io/ebayyou/pen/rNpwjLp" target="_blank" class="btn btn-dark fw-600">Show More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 show-link">
+            <a href="https://codepen.io/your-work/" class="link-port" target="_blank">
+              <p href="">show more</p>
+              <i class="bx bxl-codepen icon-link-port"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ? footer -->
+    <footer id="footer">
+      <div class="container">
+        <div class="row row-footer">
+          <div class="col-md-3">
+            <h3 class="title-footer">Got a Project? Let's talk.</h3>
+            <p class="desc-footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, magni.</p>
+            <a href="" class="link-footer">
+              <span class="text-link">@ebayyou_</span>
+              <i class="bx bx-right-arrow-alt icon-link"></i>
+            </a>
+          </div>
+
+          <div class="col-md">
+            <h3 class="title-footer">
+              Estimete your project? <br />
+              let me know here.
+            </h3>
+            <h3 class="subtitle-footer">Whats your name?</h3>
+            <h3 class="subtitle-footer">your fancy email</h3>
+            <div class="text-group">
+              <h3 class="subtitle-footer">Tell me your about project</h3>
+              <div>
+                <a href="#"><i class="bx bx-link text-secondary fs-4"></i></a>
+                <a href="#"><i class="bx bx-right-arrow-alt color-link fs-4"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row text-center">
+          <img src="img/coding.png" alt="coding-logo" style="width: 85px" class="d-block m-auto my-3" />
+          <h3 class="fs-4 mb-5">Thanks for visit <span class="text-secondary">that's all folks</span></h3>
+          <div>
+            <a href="https://codepen.io/your-work/" target="_blank" class="link-sosmed">
+              <i class="bx bxl-codepen"></i>
+            </a>
+            <a href="https://instagram.com/byanggoro_" target="_blank" class="link-sosmed">
+              <i class="bx bxl-instagram"></i>
+            </a>
+            <a href="https://github.com/ebayyou" target="_blank" class="link-sosmed">
+              <i class="bx bxl-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- out -->
 

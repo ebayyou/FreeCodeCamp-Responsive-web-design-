@@ -43,6 +43,11 @@ img {
   height: auto;
 }
 
+button {
+  outline: 0;
+  border: 0;
+}
+
 /* ? =============== REUSABLE CSS CLASSES ===============*/
 .grid {
   display: grid;
@@ -154,6 +159,8 @@ img {
   border-top-right-radius: 0.6rem;
   margin-bottom: 0;
   background-color: var(--color-darkblue);
+  display: flex;
+  align-items: center;
 }
 
 .card-text {

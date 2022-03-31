@@ -1,0 +1,70 @@
+// modules @use
+@use 'mixin' as at;
+
+$color-white: #f3f3f3;
+$color-black: #0f0f0f;
+$color-grey: rgb(112, 112, 112);
+
+// ? footer
+
+#footer {
+  margin-top: 80px;
+  background-color: $color-black;
+  color: $color-white;
+  padding: 40px 0;
+}
+
+.row-footer {
+  margin: 50px 0 120px;
+  column-gap: 13rem;
+}
+
+.title-footer {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.desc-footer {
+  color: $color-grey;
+}
+
+.link-footer {
+  @include at.flex-box(flex-start);
+  color: rgb(245, 181, 61);
+  text-decoration: none;
+  font-size: 1.2rem;
+  column-gap: 2rem;
+
+  &:hover {
+    color: rgb(245, 181, 61);
+  }
+  &:hover .icon-link {
+    transform: translateX(10px);
+  }
+}
+.color-link {
+  color: rgb(245, 181, 61);
+}
+
+.icon-link {
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+
+.text-group {
+  @include at.flex-box(space-between);
+}
+
+.subtitle-footer {
+  font-size: 1.4rem;
+  border-bottom: 1px solid $color-grey;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.link-sosmed {
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: $color-white;
+  margin: 0 10px;
+}

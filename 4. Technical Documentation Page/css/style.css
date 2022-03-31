@@ -61,9 +61,8 @@ img {
   margin-bottom: 50px;
 }
 
-.title-section {
+.text-blue {
   color: var(--color-title);
-  margin-bottom: 30px;
 }
 
 .sub-section {
@@ -107,10 +106,6 @@ img {
 }
 
 /* ? ===============  COMPONENTS ===============*/
-
-#main-doc {
-  position: relative;
-}
 
 .row-doc {
   column-gap: 4rem;
@@ -289,7 +284,7 @@ img {
   }
 
   .section-groups {
-    margin-top: 400px;
+    margin-top: 500px;
   }
 }
 

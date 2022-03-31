@@ -1,0 +1,66 @@
+// * =============== @use ===============
+@use 'modules/main-header';
+@use 'modules/section-portfolio';
+@use 'modules/footer';
+
+// * =============== GOOGLE FONTS api's ================
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+// ? =============== VARIABLES CSS ===============
+// * ========== Colors ==========
+$color-white: #f3f3f3;
+$color-grey: rgb(112, 112, 112);
+
+//* ========== Font ==========
+$body-font: 'Lato', sans-serif;
+$text-font: 'Poppins', sans-serif;
+
+// ? =============== BASE ===============
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-size: cover;
+  color: $color-white;
+  font-family: $body-font;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// * =============== REUSABLE CSS CLASSES ===============
+.title {
+  font-size: 2.8rem;
+  margin-bottom: 0.8em;
+}
+
+.paragraph {
+  color: $color-grey;
+  font-family: $body-font;
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 1.8em;
+}
+
+.section {
+  margin: 120px auto;
+}

@@ -1,0 +1,6 @@
+// ? =============== Mixin ===============
+@mixin flex-box($spacing: center) {
+  display: flex;
+  justify-content: $spacing;
+  align-items: center;
+}
